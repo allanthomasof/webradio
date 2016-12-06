@@ -1,0 +1,64 @@
+body {
+	background-image: url("../images/bg.png");
+	background-color: black;
+	background-position: padding-top: -50px;  
+	background-repeat: no-repeat;
+}
+
+/* ESTILO DOS BOTÕES DO PLAYER */
+.play {
+	background-color: transparent;
+	background-image: url("../images/play.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-top: 293px;
+	margin-left: 625px;
+}
+.play:hover {
+	background-image: url("../images/playHover.png");
+	-webkit-transition: background-image 0.5s;
+}
+.pause {
+	-webkit-transition: background-image 0.6s;
+	background-color: transparent;
+	background-image: url("../images/pause.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-top: 293px;
+	margin-left: 625px;
+}
+button:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+#painel {
+	height: 150px;
+	margin-top: 40px;
+	margin-left: 550px;	
+	background-repeat: no-repeat;
+	background-image: url("../images/painel.png");
+}
+#avancar {
+	height: 53px;
+	width: 75px;
+	border: none;
+	margin-top: 18px;
+	margin-left: 180px;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-color: transparent;
+	background-image: url("../images/avancar.png");
+}
+
+#player {
+	width: 100%;
+}
