@@ -2,6 +2,8 @@
 
 <div id="painel">
 	<button ng-click="avancar()" id="avancar"></button>
+	<button ng-click="config()" id="config"></button>
+	<button ng-click="voltar()" id="voltar"></button>
 </div>
 
 <!--
@@ -11,10 +13,9 @@
 -->
 
 <audio class="player" id="player">
-
 </audio>
 
-
-
-
-
+<div id="tocandoAgora">
+	Tocando agora:<br>
+	<marquee id="nomeDaMusica" >{{tocandoAgora}}<marquee>	
+</div>

@@ -22,6 +22,7 @@ angular.module("starter")
 	play = function() {
 		var player = document.getElementById("player");
 		$scope.statusPlayer = "pause";
+		$scope.tocandoAgora = musicas[musicaAtual];
 		player.innerHTML = '<source id="player-source" type="audio/mp3" src=' + diretorio+musicas[musicaAtual] + '.mp3' + '/>';
 		player.play();
 		statusPlayer = true;
@@ -35,13 +36,18 @@ angular.module("starter")
 		statusPlayer = false;
 	}
 	$scope.avancar = function() {
-		musicaAtual ++;
-		if(musicaAtual >= musicas.length) musicaAtual = 0;
-		document.getElementById("player").innerHTML = 
-			'<source id="player-source" type="audio/mp3" src=' + diretorio+musicas[musicaAtual] + '.mp3' + '/>';
-        document.getElementById("player").load();
-        document.getElementById("player").play();
+		if (statusPlayer) {
+			musicaAtual ++;
+			$scope.tocandoAgora = musicas[musicaAtual];
+			if(musicaAtual >= musicas.length) musicaAtual = 0;
+			document.getElementById("player").innerHTML = 
+				'<source id="player-source" type="audio/mp3" src=' + diretorio+musicas[musicaAtual] + '.mp3' + '/>';
+	        document.getElementById("player").load();
+	        document.getElementById("player").play();
+		}
 	}
+
+
 
 })
 

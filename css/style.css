@@ -43,11 +43,36 @@ button:focus, input:focus, select:focus {
 #painel {
 	height: 150px;
 	margin-top: 40px;
-	margin-left: 550px;	
+	margin-left: 553px;	
 	background-repeat: no-repeat;
 	background-image: url("../images/painel.png");
 }
+#voltar {
+	position: absolute;
+	height: 53px;
+	width: 75px;
+	border: none;
+	margin-left: 25px;
+	margin-top: 18px;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-color: transparent;
+	background-image: url("../images/voltar.png");
+}
+#config {
+	position: absolute;
+	height: 53px;
+	width: 75px;
+	border: none;
+	margin-top: 9px;
+	margin-left: 103px;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-color: transparent;
+	background-image: url("../images/config.png");
+}
 #avancar {
+	position: absolute;
 	height: 53px;
 	width: 75px;
 	border: none;
@@ -58,7 +83,17 @@ button:focus, input:focus, select:focus {
 	background-color: transparent;
 	background-image: url("../images/avancar.png");
 }
+#tocandoAgora {
+	margin-top: -50px;
+	font-size: 12px;
+	text-align: center;
+	color: #CCCCCC;
+}
+#nomeDaMusica {
+	text-align: center;
+	width: 20%;
+}
 
 #player {
-	width: 100%;
+	width: 70%;
 }
